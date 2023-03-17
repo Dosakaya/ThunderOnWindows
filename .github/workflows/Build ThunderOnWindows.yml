@@ -31,7 +31,37 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: ThunderOnWindows/Thunder
-        repository: rdkcentral/Thunder
+        repository: Dosakaya/Thunder
+
+    - name: Checkout ThunderTools
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderTools
+        repository: rdkcentral/ThunderTools
+
+    - name: Checkout ThunderClientLibraries
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderClientLibraries
+        repository: rdkcentral/ThunderClientLibraries
+
+    - name: Checkout ThunderInterfaces
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderInterfaces
+        repository: rdkcentral/ThunderInterfaces
+
+    - name: Checkout ThunderNanoServices
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderNanoServices
+        repository: rdkcentral/ThunderNanoServices
+
+    - name: Checkout ThunderNanoServicesRDK
+      uses: actions/checkout@v3
+      with:
+        path: ThunderOnWindows/ThunderNanoServicesRDK
+        repository: WebPlatformForEmbedded/ThunderNanoServicesRDK
 
     - name: Install jsonref
       run: pip install jsonref
