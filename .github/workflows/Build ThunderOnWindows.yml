@@ -2,9 +2,9 @@ name: Build ThunderOnWindows
 
 on:
   push:
-    branches: ["master"]
+    branches: ["R2"]
   pull_request:
-    branches: ["master"]
+    branches: ["R2"]
  
 env:
   devEnv: C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.com
