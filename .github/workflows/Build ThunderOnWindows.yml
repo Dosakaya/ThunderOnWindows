@@ -32,7 +32,7 @@ jobs:
       with:
         ref: R2
         path: ThunderOnWindows/Thunder
-        repository: rdkcentral/Thunder
+        repository: Dosakaya/Thunder
 
     - name: Checkout ThunderTools
       uses: actions/checkout@v3
