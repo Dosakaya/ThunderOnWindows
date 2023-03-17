@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        type: [Debug, Release]
-        version: [64, 86]
+        type: [Debug]
+        version: [64]
 
     name: Build type - ${{matrix.type}}${{matrix.version}}
     steps:
@@ -30,6 +30,7 @@ jobs:
     - name: Checkout Thunder
       uses: actions/checkout@v3
       with:
+        ref: R2
         path: ThunderOnWindows/Thunder
         repository: rdkcentral/Thunder
 
